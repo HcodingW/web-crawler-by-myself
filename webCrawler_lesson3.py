@@ -57,27 +57,6 @@ def crawl_web(seed):
             crawled.append(page)
     return crawled                        
 
-'''
-## crawl with max depth.
-def crawl_web(seed,max_depth):
-    tocrawl = [seed]
-    crawled = []
-    d = len(tocrawl) - 1
-    i = 0
-    
-    while i <= max_depth:
-        while d >= 0:
-            page = tocrawl.pop(d)
-            if page not in crawled:
-                union(tocrawl, get_all_links(get_page(page)))
-                crawled.append(page)
-            d -= 1
-        i = i + 1
-        d = len(tocrawl) - 1
-    
-    return crawled
 
-'''
-    
     
 print (crawl_web("http://xkcd.com/554"))
