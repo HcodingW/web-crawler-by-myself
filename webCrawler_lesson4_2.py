@@ -2,7 +2,7 @@
 """
 Created on Fri Jan 27 00:03:56 2017
 
-@author: wuhan
+@author: HW
 """
 
 # 2 Gold Stars
